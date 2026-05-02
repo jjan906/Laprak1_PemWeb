@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laporan Teori Praktikum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <p>Laporan Teori & Praktikum · Sistem Informasi</p>
+  <h1>Pemograman Web</h1>
+  <p>Information Retrieval Laboratory</p>
+</header>
+
+<nav class="site-nav">
+  <a href="#soal">Pertanyaan Teori</a>
+  <a href="#jawaban">Jawaban Teori</a>
+  <a href="#formulir">Formulir</a>
+</nav>
+
+<!-- ================= SOAL ================= -->
+<div class="card" id="soal">
+  <span class="card-label">Bagian I</span>
+  <h2>Pertanyaan Teori</h2>
+
+  <h3>1. Tentang Tag</h3>
+  <ul>
+    <li>a. Apa itu tag di HTML?</li>
+    <li>b. Apa itu tag pembuka dan penutup? Semua tag punya?</li>
+  </ul>
+
+  <h3>2. Tentang Element</h3>
+  <ul>
+    <li>a. Apa itu element?</li>  
+    <li>b. Apa itu tagname, attribute, dan content?</li>
+    <li>c. Bisa tidak elemen ditumpuk? Apa dampaknya?</li>
+  </ul>
+
+  <h3>3. Tentang Anchor</h3>
+  <ul>
+    <li>a. Apa itu anchor?</li>
+    <li>b. Bagaimana anchor bekerja?</li>
+  </ul>
+
+  <h3>4. Tentang Multimedia</h3>
+  <ul>
+    <li>A. Teks</li>
+    <li>B. Gambar</li>
+    <li>C. Audio</li>
+    <li>D. Video</li>
+  </ul>
+</div>
+
+<!-- ================= JAWABAN ================= -->
+<div class="card" id="jawaban">
+  <span class="card-label">Bagian II</span>
+  <h2>Jawaban Teori</h2>
+
+  <h3>1. Tentang Tag</h3>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 1a</div>
+    <p>
+      Tag HTML adalah kode petunjuk untuk browser agar mengetahui bagaimana konten ditampilkan.
+      Semua website dibangun dari kumpulan tag. Contohnya
+      <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, dan <code>&lt;img&gt;</code>.
+    </p>
+  </div>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 1b</div>
+    <p>
+      Tag pembuka digunakan untuk memulai, dan tag penutup untuk mengakhiri
+      seperti <code>&lt;p&gt;</code> dan <code>&lt;/p&gt;</code>.
+      Tidak semua tag punya penutup, seperti <code>&lt;img&gt;</code> dan <code>&lt;br&gt;</code>.
+    </p>
+  </div>
+
+  <h3>2. Tentang Element</h3>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 2a</div>
+    <p>
+      Element adalah bagian lengkap HTML yang terdiri dari tag pembuka,
+      isi, dan tag penutup.
+    </p>
+  </div>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 2b</div>
+    <p>
+      Tagname adalah nama tag seperti <code>p</code> atau <code>h1</code>.
+      Attribute adalah tambahan seperti <code>href</code>.
+      Content adalah isi di dalam tag.
+    </p>
+  </div>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 2c</div>
+    <p>
+      Elemen bisa ditumpuk (nested). Namun harus berurutan dengan benar,
+      jika tidak bisa menyebabkan error atau tampilan rusak.
+    </p>
+  </div>
+
+  <h3>3. Tentang Anchor</h3>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 3a</div>
+    <p>
+      Anchor adalah tag untuk membuat link menuju halaman lain
+      atau bagian tertentu.
+    </p>
+  </div>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 3b</div>
+    <p>
+      Anchor bekerja dengan atribut <code>href</code>.
+      Saat diklik, browser akan menuju alamat tersebut.
+    </p>
+  </div>
+
+  <h3>4. Tentang Multimedia</h3>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 4A</div>
+    <p>
+      Tag teks: <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;strong&gt;</code>,
+      <code>&lt;em&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>.
+    </p>
+  </div>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 4B</div>
+    <p>
+      Gambar menggunakan <code>&lt;img&gt;</code>.
+      Jika tidak tampil biasanya karena path salah.
+      Atribut <code>alt</code> digunakan sebagai teks pengganti.
+    </p>
+  </div>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 4C</div>
+    <p>
+      Audio menggunakan <code>&lt;audio&gt;</code>,
+      bisa dari file lokal atau internet.
+    </p>
+  </div>
+
+  <div class="jawaban-item">
+    <div class="q-num">Jawaban 4D</div>
+    <p>
+      Video menggunakan <code>&lt;video&gt;</code>.
+      Untuk autoplay biasanya perlu atribut <code>muted</code>.
+    </p>
+  </div>
+
+</div>
+
+<!-- ================= FORM ================= -->
+<div class="form-section" id="formulir">
+  <h2>Formulir Pengumpulan</h2>
+
+  <form id="formLaporan">
+    <table>
+      <tr>
+        <td>Nama</td>
+        <td><input type="text" class="form-input" required></td>
+      </tr>
+      <tr>
+        <td>NIM</td>
+        <td><input type="text" class="form-input" maxlength="10" required></td>
+      </tr>
+      <tr>
+        <td>Tanggal</td>
+        <td><input type="date" class="form-input" required></td>
+      </tr>
+    </table>
+
+    <button type="submit" class="btn-submit">Kirim</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
